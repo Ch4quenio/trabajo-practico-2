@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+<section class = "hero">
+<h1>Global Covid  <Br> Data on <br>real time</h1>
+  <a href="#" class = "button">Lets go!</a>
+</section>
+<section class = "globalData container02">
+<h2>Global Data</h2>
+<div class="pruebaContainer">
+<div class="prueba">
+  <figure class ="dataCard">
+    <img src="./img/jeringa.png" alt="fotoduko">
+<div class="capa">
+<p  id = "totalRecovered" class =""></p>
+</div>
+  </figure>
+</div>
+<div class="prueba">
+  <figure class = "dataCard">
+    <img src="./img/covid.png" alt="fotoduko">
+<div class="capa">
+<p  id = "totalConfirmed"></p>
+</div>
+  </figure>
+</div>
+<div class="prueba">
+  <figure class = "dataCard">
+    <img src="./img/death.png" alt="fotoduko">
+<div class="capa">
+<p class = "dataMuerte" id = "newDeaths"></p>
+</div>
+  </figure>
+</div>
+</div>
+</section>
+<section class = "countrySection container02">
+  <h2>Data by Country</h2>
+<div class="countryFinderContainer">
+  <input type="text" name="espacio"  id = "espacio" class = "countryFinder" placeholder="Type a country">
+  <button type="button" name="button" onclick="encontrarPais()" class = "findButton" >Find</button>
+</div>
+<h2 id = "datos" class = "centrar-texto"></h2>
+<div class="datosContainer">
+<p class ="dato"id = "datos2"></p>
+<p class ="dato"id = "datos3"></p>
+<p class ="dato"id = "datos4"></p>
+
+</div>
+<h3 id = "newsH3" class ="container02 newsH3"></h3>
+<div class="newsCardContainer">
+<div  id ="news1">
+<img src="" alt="" id = "img">
+<h3 id = "newsTitle"></h3>
+<p id = "newsContent"></p>
+<p id ="newsUrl"></p>
+</div>
+<div  id = "news2" >
+<img src="" alt="" id = "img2">
+<h3 id = "newsTitle2"></h3>
+<p id = "newsContent2"></p>
+<p id ="newsUrl2"></p>
+</div>
+<div  id = "news3">
+<img src="" alt="" id = "img3">
+<h3 id = "newsTitle3"></h3>
+<p id = "newsContent3"></p>
+<p id ="newsUrl3"></p>
+</div>
+</div>
+
+</section>
+
+
+<script src = "javascripts/index.js">
+
+</script>
+<script type="text/javascript" src = "https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js">
+
+</script>
+
+
+
+
+  </body>
+</html>
